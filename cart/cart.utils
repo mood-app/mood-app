@@ -1,0 +1,18 @@
+const CART = 'CART';
+const defaultEmptyCart = [];
+
+export function addToCart(id, amount) {
+    const cart = getCart();
+    const cartItem = findById(id, cart);
+
+    if (cartItem) {
+        cartItem.quantity += Number(amount);
+    } else {
+        const newItem = {
+            id: id,
+            quantity: Number(amount)
+        };
+        cart.push(newItem);
+    }
+    setCart(cart);
+}

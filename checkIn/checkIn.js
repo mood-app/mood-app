@@ -8,8 +8,8 @@ const sleepForm = document.getElementById('sleep-form');
 
 sleepH1.textContent = sleep.question;
 
-   
-  
+
+
 for (let item of sleep.choices) {
     const radio = document.createElement('input');
     const choices = document.createElement('label');
