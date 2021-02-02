@@ -1,68 +1,34 @@
-import { sleep, mood, energy, mbs } from '../data.js';
+import checkIn from '../data.js';
+import { findById } from '../utils.js';
+
+const 
+
+// const sleepForm = document.querySelector('sleep-form');
+// const sleepButton = document.querySelector('sleep-button');
 
 
-
-const sleepH1 = document.getElementById('sleep-id');
-const sleepForm = document.getElementById('sleep-form');
-
-
-sleepH1.textContent = sleep.question;
+for (let item of checkIn) {
+    const sleepH1 = document.getElementById('sleep-id');
+    sleepH1.textContent = item[0].question;
 
    
   
-for (let item of sleep.choices) {
-    const radio = document.createElement('input');
-    const choices = document.createElement('label');
-    radio.type = 'radio';
-    radio.value = item.id;
-    radio.name = 'choices';
-    choices.textContent = item.description;
-    choices.append(radio);
-
-    sleepForm.append(choices);
 }
-// MOOD 
-const moodH1 = document.getElementById('mood-id');
-const moodForm = document.getElementById('mood-form');
-moodH1.textContent = mood.question;
-for (let item of mood.choices) {
-    const radio = document.createElement('input');
-    const choices = document.createElement('label');
-    radio.type = 'radio';
-    radio.value = item.id;
-    radio.name = 'choices';
-    choices.textContent = item.description;
-    choices.append(radio);
 
-    moodForm.append(choices);
-}
-// ENERGY LEVELS 
-const energyH1 = document.getElementById('energy-id');
-const energyForm = document.getElementById('energy-form');
-energyH1.textContent = energy.question;
-for (let item of energy.choices) {
+for (let choice of checkIn) {
     const radio = document.createElement('input');
-    const choices = document.createElement('label');
-    radio.type = 'radio';
-    radio.value = item.id;
-    radio.name = 'choices';
-    choices.textContent = item.description;
-    choices.append(radio);
+    const label = document.createElement('label');
+    const span = document.createElement('a');
+    const sleepForm = document.getElementById('sleep-form');
+  
 
-    energyForm.append(choices);
-}
-// MBS
-const mbsH1 = document.getElementById('mbs-id');
-const mbsForm = document.getElementById('mbs-form');
-mbsH1.textContent = mbs.question;
-for (let item of mbs.choices) {
-    const radio = document.createElement('input');
-    const choices = document.createElement('label');
-    radio.type = 'radio';
-    radio.value = item.id;
-    radio.name = 'choices';
-    choices.textContent = item.description;
-    choices.append(radio);
+    span.textContent = choice.description;
 
-    mbsForm.append(choices);
+
+    radio.type = 'radio';
+    radio.value = choice.id;
+    radio.name = 'choices';
+    label.append(span, radio);
+
+    sleepForm.append(label);
 }
