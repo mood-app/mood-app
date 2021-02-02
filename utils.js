@@ -1,3 +1,6 @@
+import { sleep, mood } from './data.js';
+
+
 export function setUser(formData) {
     const newUser = {
         name: formData.get('name'),

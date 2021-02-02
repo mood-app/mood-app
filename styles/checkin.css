@@ -1,0 +1,67 @@
+body, html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+body {
+  background-color: pink;
+}
+
+
+div {
+  border: 2px solid white;
+  background: white;
+  color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 40px;
+  margin: 40px;
+  box-shadow: 10px 10px 5px grey;
+  font-family: 'Montserrat', sans-serif;
+  width: 60%;
+}
+
+button {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display:flex;
+  background: white;
+  color: pink;
+  border: 1px pink solid;
+  margin: 10px;
+  padding: 5px;
+  font-size: 1.2em;
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.2em;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
