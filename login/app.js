@@ -10,5 +10,5 @@ form.addEventListener('submit', (e) => {
 
     setUser(formData);
 
-    // window.location = '../map';
+    window.location = '../checkIn';
 });
