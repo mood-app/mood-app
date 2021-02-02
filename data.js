@@ -5,26 +5,28 @@
 // set event listeners to update state and DOM
 
 //randomizing function that chooses an index from each array
-export const sleep = {
+export const sleep = { //accessing keys in objects is faster and more efficienct than iterating through an array
     id: 'sleep',
     question: 'How many hours did you sleep?',
     // image: 'vinyasa-quest.png',
-    choices: [{
-        id: 'less6',
-        description: 'Less than 6 hours of Sleep',
-        result: ['amythest', 'opal', 'tiger'],
-    }, 
-    {
-        id: '6to9',
-        description: 'In between 6 and 9 hours of Sleep',
-        result: ['amythest', 'opal', 'tiger'],
-    },
-    {
-        id: '9plus',
-        description: 'More than 9 hours of sleep',
-        result: ['amythest', 'opal', 'tiger'],
+    choices: {
+        less6 : {
+            id: 'less6',
+            description: 'Less than 6 hours of Sleep',
+            result: ['amythest', 'opal', 'tiger']
+        }, 
+        sixToNine: {
+            id: 'sixToNine',
+            description: 'In between 6 and 9 hours of Sleep',
+            result: ['amythest', 'opal', 'tiger']
+        },
+        ninePlus: {
+            id: 'ninePlus',
+            description: 'More than 9 hours of sleep',
+            result: ['amythest', 'opal', 'tiger']
+        }
     }
-    ]
+    
 };
 export const mood = {
     id: 'mood',
