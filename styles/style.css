@@ -6,12 +6,12 @@ body {
     --color3: hsla(200, 61%, 56%, 1);
     --color4: hsla(187, 41%, 94%, 1);
     --color5: hsla(170, 28%, 95%, 1); */
-/* 
-    /* --color1: hsla(45, 86%, 83%, 1);
+
+    --color1: hsla(45, 86%, 83%, 1);
     --color2: hsla(135, 65%, 98%, 1);
     --color3: hsla(315, 37%, 86%, 1);
     --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+    --color5: rgb(196, 195, 230);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
@@ -19,7 +19,7 @@ body {
     --footer-height: 25px;
     
     font-family: 'Titillium Web', sans-serif;
-    background-color: var(--color2);
+    background-color: var(--color5);
 }
 
 main {
@@ -48,7 +48,7 @@ section {
 header {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color5);
     height: var(--header-height);
     box-shadow: var(--shadow);
 }
@@ -56,7 +56,7 @@ header {
 footer {
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color5);
     box-shadow: var(--shadow);
 }
 
@@ -64,6 +64,17 @@ footer {
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    margin-top: 50px;
 }
 
 .gutter-right {
@@ -95,7 +106,7 @@ footer {
     height: var(--footer-height);
     display: flex;
     justify-content: flex-end;
-    background-color: var(--color3);
+    background-color: var(--color5);
     box-shadow: var(--shadow);
 }
   
