@@ -1,4 +1,4 @@
-import { sleep } from './data.js';
+import { sleep, mood } from './data.js';
 
 
 export function setUser(formData) {
@@ -41,3 +41,14 @@ export function getSleepCrystal(sleeptier) {
 
     return crystal;
 };
+
+export function getOils(moodtier) {
+
+    const resultsArray = mood.choices;
+    const oils = resultsArray.find(({id}) => id === moodtier).result; 
+
+    const oil = oils[genRandom(oils)];
+
+    return oil;
+
+}
