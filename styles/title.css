@@ -1,0 +1,26 @@
+html, body {
+    /* font-family: 'Chicle', cursive;
+    font-family: 'Coiny', cursive;
+    font-family: 'Lemonada', cursive;
+    font-family: 'Modak', cursive;
+    font-family: 'Montserrat', sans-serif; */
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    background: no-repeat center center/cover  rgba(233, 195, 125, 0.748) url(../assets/backgrounds/pexels-karolina-grabowska-4194853.jpg);
+    background-blend-mode: screen;
+}
+
+section {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: var(--gutter);
+    padding-bottom: var(--gutter);
+    margin-top: var(--gutter);
+    margin-bottom: var(--gutter);
+}
