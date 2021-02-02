@@ -15,34 +15,37 @@ moodSection.style.display = 'none';
 energySection.style.display = 'none';
 mbsSection.style.display = 'none';
 
-
+// SLEEP 
 sleepH1.textContent = sleep.question;
 
-let item;
+let item1;
 console.log(sleep.choices);
-for (item in sleep.choices) {
+for (item1 in sleep.choices) {
     console.log(sleep.choices.item);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
-    radio.value = sleep.choices[item].id;
+    radio.value = sleep.choices[item1].id;
     radio.name = 'choices';
-    choices.textContent = sleep.choices[item].description;
+    choices.textContent = sleep.choices[item1].description;
     choices.append(radio);
 
     sleepForm.append(choices);
 }
 // MOOD 
+let item2;
 const moodH1 = document.getElementById('mood-id');
 const moodForm = document.getElementById('mood-form');
 moodH1.textContent = mood.question;
-for (let item of mood.choices) {
+console.log(sleep.choices);
+for (item2 in mood.choices) {
+    console.log(mood.choices.item2);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
-    radio.value = item.id;
+    radio.value = mood.choices[item2].id;
     radio.name = 'choices';
-    choices.textContent = item.description;
+    choices.textContent = mood.choices[item2].description;
     choices.append(radio);
 
     moodForm.append(choices);
@@ -51,13 +54,16 @@ for (let item of mood.choices) {
 const energyH1 = document.getElementById('energy-id');
 const energyForm = document.getElementById('energy-form');
 energyH1.textContent = energy.question;
-for (let item of energy.choices) {
+let item3;
+console.log(energy.choices);
+for (item3 in energy.choices) {
+    console.log(energy.choices.item3);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
-    radio.value = item.id;
+    radio.value = energy.choices[item3].id;
     radio.name = 'choices';
-    choices.textContent = item.description;
+    choices.textContent = energy.choices[item3].description;
     choices.append(radio);
 
     energyForm.append(choices);
@@ -66,13 +72,16 @@ for (let item of energy.choices) {
 const mbsH1 = document.getElementById('mbs-id');
 const mbsForm = document.getElementById('mbs-form');
 mbsH1.textContent = mbs.question;
-for (let item of mbs.choices) {
+let item4;
+console.log(mbs.choices);
+for (item4 in mbs.choices) {
+    console.log(mbs.choices.item4);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
-    radio.value = item.id;
+    radio.value = mbs.choices[item4].id;
     radio.name = 'choices';
-    choices.textContent = item.description;
+    choices.textContent = mbs.choices[item4].description;
     choices.append(radio);
 
     mbsForm.append(choices);
