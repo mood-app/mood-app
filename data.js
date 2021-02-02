@@ -5,46 +5,7 @@
 // set event listeners to update state and DOM
 
 //randomizing function that chooses an index from each array
-const sleep = {
-    sleep6hoursRadioButton: {
-        crystals: ['amythest', 'opal', 'tiger']
-        // meditations: ['meditations1', 'meditations2', 'meditations3']
-        // excercises: ['excercise1', 'excercise2', 'excercise3']
-    },
-    sleep9hoursRadioButton: {
-        crystals: ['crystal0', 'am1', 'crystal2']
-        meditations: ['meditations1', 'meditations2', 'meditations3']
-        excercises: ['excercise1', 'excercise2', 'excercise3']
-    },
-    mbsRadioButton: {
-        mind: {
-            option1: ['','' ,'' , ]
-            option2: ['yoga']
-        }
-        body: {
-            ['','','']
-        } 
-        spirit: {
-
-        
-        ['','','']
-        };
-    },
-    energyLevelsRadioButton: {
-        low: ['','','']
-        medium: ['','','']
-        high: ['','','']
-    },
-    moodRadioButton: {
-        happy: ['','','']
-        sad: ['','','']
-        mad: ['','','']
-    }
-};
-export
-
-
-const sleep = {
+export const sleep = {
     id: 'sleep',
     question: 'How many hours did you sleep?',
     // image: 'vinyasa-quest.png',
@@ -65,7 +26,7 @@ const sleep = {
     }
     ]
 };
-const mood = {
+export const mood = {
     id: 'mood',
     question: 'How are you feeling today?',
     // image: 'vinyasa-quest.png',
@@ -86,8 +47,8 @@ const mood = {
     }
     ]
 };
-const energylevels = {
-    id: 'energylevels',
+export const energy = {
+    id: 'energy',
     question: 'How would you describe your energy levels today?',
     // image: 'vinyasa-quest.png',
     choices: [{
@@ -107,7 +68,7 @@ const energylevels = {
     }
     ]
 };
-const mbs = {
+export const mbs = {
     id: 'mbs',
     question: 'Where do you want to feel more connection?',
     // image: 'vinyasa-quest.png',
@@ -129,9 +90,11 @@ const mbs = {
     ]
 };
 
-const checkIn = [
-    sleep, 
-    mood,
-    energylevels,
-    mbs
-];
+// const checkIn = [
+//     sleep, 
+//     mood,
+//     energylevels,
+//     mbs
+// ];
+
+// export default checkIn; 
