@@ -45,7 +45,7 @@ sleepForm.addEventListener('submit', (e) => {
     const formData = new FormData(sleepForm);
 
     const selectionId = formData.get('choices');
-    
+
     const user = JSON.parse(localStorage.getItem('USER'));
     
     user.sleep = selectionId;
@@ -209,7 +209,7 @@ mbsForm.addEventListener('submit', (e) => {
     energySection.style.display = 'none';
     mbsSection.style.display = 'flex';
 
-    // window.location = '../results.html';
+    window.location = '../results';
  
     
 });

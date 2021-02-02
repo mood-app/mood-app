@@ -19,9 +19,8 @@ export function findById(id, array) {
     for (let item of array) {
         if (item.id === id)
             return item;
-    };
+    }
 }
-
 
 
 
@@ -30,7 +29,7 @@ export function genRandom(array) {
     // ARGUMENT: "array" is a variable/parameter that is returning an array
     // RETURN: A random number (integer)
     return Math.floor(Math.random() * array.length);
-};
+}
 
 export function getSleepCrystal(sleeptier) { 
     //FUNCTION DEFINITION: this function is accessing the result array 
@@ -43,7 +42,7 @@ export function getSleepCrystal(sleeptier) {
     const crystal = sleep['choices'][sleeptier]['result'][genRandom(crystalArray)];
 
     return crystal;
-};
+}
 
 export function getOils(moodtier) {
 
@@ -53,16 +52,16 @@ export function getOils(moodtier) {
     
     return oil;
 
-}; 
+} 
 
 export function getEnergyLevels(energytier) {
     const energyArray = energy['choices'][energytier]['result'];
 
-    const energy = energy['choices'][moodtier]['resut'][genRandom(energyArray)];
+    const energy = energy['choices'][energytier]['resut'][genRandom(energyArray)];
 
     return energy;
 
-};
+}
 
 export function getMbs(mbstier) { 
     const mbsArray = mbs['choices'][mbstier]['result']; 
@@ -70,5 +69,5 @@ export function getMbs(mbstier) {
     const mbs = mbs['choices'][mbstier]['result'][genRandom(mbsArray)];
 
     return mbs;
-};
+}
 
