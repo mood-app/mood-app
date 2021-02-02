@@ -9,7 +9,7 @@ export function setUser(formData) {
         mood: '',
         energyLevels: '',
         mbs: '',
-        // completed: {},
+        solutions: {},
     };
     const stringyNewUser = JSON.stringify(newUser);
     localStorage.setItem('USER', stringyNewUser);
@@ -21,6 +21,9 @@ export function findById(id, array) {
             return item;
     };
 }
+
+
+
 
 export function genRandom(array) { 
     //FUNCTION DEFINITION: this function generates a randon number based on the length of any given array
