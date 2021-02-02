@@ -87,6 +87,7 @@ for (item4 in mbs.choices) {
     mbsForm.append(choices);
 }
 
+
 // sleep event listners //
 
 const sleepButton = document.createElement('button');
@@ -129,8 +130,10 @@ sleepForm.addEventListener('submit', (e) => {
     
     sleepSection.style.display = 'none';
     moodSection.style.display = 'flex';
+  
+  //NOT SURE WHERE THIS GOES
+   // sleepForm.append(label);
 
-    
     
 });
 
@@ -277,9 +280,7 @@ mbsForm.addEventListener('submit', (e) => {
     mbsSection.style.display = 'flex';
 
     // window.location = '../results.html';
-    
-
-    
+ 
     
 });
 
