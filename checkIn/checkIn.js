@@ -18,15 +18,16 @@ mbsSection.style.display = 'none';
 
 sleepH1.textContent = sleep.question;
 
-   
-  
-for (let item of sleep.choices) {
+let item;
+console.log(sleep.choices);
+for (item in sleep.choices) {
+    console.log(sleep.choices.item);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
-    radio.value = item.id;
+    radio.value = sleep.choices[item].id;
     radio.name = 'choices';
-    choices.textContent = item.description;
+    choices.textContent = sleep.choices[item].description;
     choices.append(radio);
 
     sleepForm.append(choices);
@@ -272,3 +273,6 @@ mbsForm.addEventListener('submit', (e) => {
     
     
 });
+
+
+    
