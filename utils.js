@@ -44,11 +44,28 @@ export function getSleepCrystal(sleeptier) {
 
 export function getOils(moodtier) {
 
-    const resultsArray = mood.choices;
-    const oils = resultsArray.find(({id}) => id === moodtier).result; 
+    const oilsArray = mood['choices'][moodtier]['result'];
 
-    const oil = oils[genRandom(oils)];
-
+    const oil = mood['choices'][moodtier]['result'][genRandom(oilsArray)];
+    
     return oil;
 
-}
+}; 
+
+export function getEnergyLevels(energytier) {
+    const energyArray = energy['choices'][energytier]['result'];
+
+    const energy = energy['choices'][moodtier]['resut'][genRandom(energyArray)];
+
+    return energy;
+
+};
+
+export function getMbs(mbstier) { 
+    const mbsArray = mbs['choices'][mbstier]['result']; 
+
+    const mbs = mbs['choices'][mbstier]['result'][genRandom(mbsArray)];
+
+    return mbs;
+};
+
