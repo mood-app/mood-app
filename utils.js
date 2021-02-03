@@ -55,12 +55,12 @@ export function getOils(moodtier) {
 } 
 
 export function getEnergyLevels(energytier) {
+
     const energyArray = energy['choices'][energytier]['result'];
 
-    const energy = energy['choices'][energytier]['resut'][genRandom(energyArray)];
+    const energy = energy['choices'][energytier]['result'][genRandom(energyArray)];
 
     return energy;
-
 }
 
 export function getMbs(mbstier) { 
