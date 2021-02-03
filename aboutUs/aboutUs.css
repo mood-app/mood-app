@@ -1,111 +1,56 @@
-body, html {
-    width: 100%;
-    height: 100%;
-    padding: 0;
+
+#crystal-image {
+    max-height: 20%;
+    max-width: 20%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+#top-container {
+    margin-top: 20rem;
+}
+
+#individual-div {
+    background-color: #FED3AE;
+    width: 400px;
+    height: 600px;
+    margin: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-color: #FFCDD5;
+    border-style: solid;
+    border-width: 10px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 110%;
     margin: 0;
-
-}
-* {
-    box-sizing: border-box;
+    padding: 0;
 }
 
-
-.navbar {
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color:  #fdfffc;
-color: pink;
-opacity: 0.8;
-width: 100%;
-height: 70px;
-position: fixed;
-top: 0px;
-padding: 0 30px;
-box-shadow: 5px 5px 2px grey;
-}
-
-.navbar a {
-color: #fec89a;
-padding: 10px 20px;
-margin: 0 5px;
-text-decoration: none;
-font-family: 'Montserrat', sans-serif;
-font-weight: bold;
-font-size: 1em;
-}
-
-
-ul {
-display: flex;
-padding: 50px;
-text-decoration: none;
-list-style: none;
-
-}
-
-.top-container{
-background-color: #fdfffc;
-background-image: url("../assets/home.png");                       
-background-repeat:no-repeat;
-background-position: bottom right;
-display: flex;
-flex-direction: column;
-justify-content: center;
-text-align: left;
-height: 100%;
-padding: 200px;
-background-color: white;
-
-
+#profile-pic {
+     height: 250px;
+    width: 250px;
+    margin-top: 20px; 
+    max-height: 50%;
+    max-width: 50%;s
+    margin-top: 20px;
+    border-radius: 15px;
 }
 
 p {
-color: #242423;
-font-family: 'Montserrat', sans-serif;
-font-weight: 300;
-padding-right: 20px;
-padding-top: 20px;
-width: 50%;
-font-size: 1em;
-}
-
-.logo {
-color: pink;
-font-family: 'Montserrat', sans-serif;
-font-weight: 400;
-font-size: 1.5em;
-padding-right: 20px;
-padding-top: 20px;
-width: 50%;
+    width: 250px;
 }
 
 h1 {
-color: #e5989b;
-font-size: 1.2em;
-width: 50%;
-font-family: 'Belleza', sans-serif;
-font-weight:400;
-font-size: 2em;
-
-}
-
-button {
-
-background: #fdfffc;
-color: #fec89a;
-border: 2px #fec89a solid;
-font-size:1em;
-padding: 10px;
-margin-top: 20px;
-text-decoration: none;
-font-family: 'Belleza', sans-serif;
-font-weight: 400;
-width: 100px;
-height: auto;
-border-radius: 8px;
-}
-
-button:focus {
-outline: none;
+    margin: 0;
+    margin-top: 5px;
 }
