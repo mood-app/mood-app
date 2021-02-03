@@ -6,85 +6,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../styles/reset.css">
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/home.css">
-    <link rel="stylesheet" href="../styles/style.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Chicle&family=Coiny&family=Lemonada:wght@500&family=Modak&family=Montserrat&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="../styles/title.css">
+    <link rel="stylesheet" href="../styles/login.css">
     <title>User Login</title>
 </head>
 
 <body>
-    <header>
-        <!-- <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
-        </div> -->
-        <a href="../checkIn/index.html"><button class="btn btn-info">Login</button></a>
-    </header>
+    <!---- too keep or to not keep the nav?? -->
+     <div id="navbar" class="navbar">
+        <div class="logo">
+          <span>Afyaa</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="./aboutUs/aboutUs.html">About Us</a></li>
+          </ul>
+        </nav>
+    </div> 
     <main>
         <section class="main-section">
             <!-- <img class="main-logo" src="assets/alchemy-logo.png"/> -->
             <h2>
-                Moodz
+            
             </h2>
             <form>
                 <label class="user">
                     <input type="text" id="name" name="name" placeholder="Name"></input>
                 </label>
-                <label>
-                    <input type="radio" name="zodiac" value="aries" />
-                    <img src="../assets/Aries.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="taurus" />
-                    <img src="../assets/Taurus.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="gemini" />
-                    <img src="../assets/Gemini.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="cancer" />
-                    <img src="../assets/Cancer.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="leo" />
-                    <img src="../assets/Leo.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="virgo" />
-                    <img src="../assets/Virgo.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="libra" />
-                    <img src="../assets/Libra.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="scorpio" />
-                    <img src="../assets/Scorpio.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="sagittarius" />
-                    <img src="../assets/Sagittarius.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="capricorn" />
-                    <img src="../assets/Capricorn.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="aquarius" />
-                    <img src="../assets/Aquarius.png" height="50px" width="50px">
-                </label>
-                <label>
-                    <input type="radio" name="zodiac" value="pisces" />
-                    <img src="../assets/Pisces.png" height="50px" width="50px">
-                </label>
+                <div class ="buttons">
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="aries"/>
+                        <div class="hide">Aries</div>
+                        <img src="../assets/Aries.png" height="50px" width="50px"></a>
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="taurus" />
+                        <div class="hide">Taurus</div>
+                        <img src="../assets/Taurus.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="gemini" />
+                        <div class="hide">Gemini</div>
+                        <img src="../assets/Gemini.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="cancer" />
+                        <div class="hide">Cancer</div>
+                        <img src="../assets/Cancer.png" height="50px" width="50px">
+                    </label>
+                </div>
+                <div class ="buttons">
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="leo" />
+                        <div class="hide">Leo</div>
+                        <img src="../assets/Leo.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="virgo" />
+                        <div class="hide">Virgo</div>
+                        <img src="../assets/Virgo.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="libra" />
+                        <div class="hide">Libra</div>
+                        <img src="../assets/Libra.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="scorpio" />
+                        <div class="hide">Scorpio</div>
+                        <img src="../assets/Scorpio.png" height="50px" width="50px">
+                    </label>
+                </div>
+                <div class ="buttons">
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="sagittarius" />
+                        <div class="hide">Sagittaruis</div>
+                        <img src="../assets/Sagittarius.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="capricorn" />
+                        <div class="hide">Capricorn</div>
+                        <img src="../assets/Capricorn.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="aquarius" />
+                        <div class="hide">Aquaruis</div>
+                        <img src="../assets/Aquarius.png" height="50px" width="50px">
+                    </label>
+                    <label>
+                        <input class="myDIV" type="radio" name="zodiac" value="pisces" />
+                        <div class="hide">Pisces</div>
+                        <img src="../assets/Pisces.png" height="50px" width="50px">
+                    </label>
+                </div>
                 <input type="submit" id="submit" />
             </form>
         </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2021 MOODZ</div>
-    </footer>
 
     <script type="module" src="app.js"></script>
 </body>
