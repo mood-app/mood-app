@@ -1,5 +1,4 @@
 import { sleep, mood, energy, mbs } from '../data.js';
-import { findById } from '../utils.js';
 
 
 const sleepH1 = document.getElementById('sleep-id');
@@ -19,9 +18,8 @@ mbsSection.style.display = 'none';
 sleepH1.textContent = sleep.question;
 
 let item1;
-console.log(sleep.choices);
 for (item1 in sleep.choices) {
-    console.log(sleep.choices.item);
+
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
@@ -47,15 +45,15 @@ sleepForm.addEventListener('submit', (e) => {
     const selectionId = formData.get('choices');
 
     const user = JSON.parse(localStorage.getItem('USER'));
-    
+
     user.sleep = selectionId;
-    
+
     localStorage.setItem('USER', JSON.stringify(user));
 
 
     //leave alone
     sleepSection.style.display = 'none';
-    moodSection.style.display = 'flex';    
+    moodSection.style.display = 'flex';
 });
 
 
@@ -65,9 +63,7 @@ let item2;
 const moodH1 = document.getElementById('mood-id');
 const moodForm = document.getElementById('mood-form');
 moodH1.textContent = mood.question;
-console.log(sleep.choices);
 for (item2 in mood.choices) {
-    console.log(mood.choices.item2);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
@@ -94,9 +90,9 @@ moodForm.addEventListener('submit', (e) => {
     const selectionId = formData.get('choices');
 
     const user = JSON.parse(localStorage.getItem('USER'));
-    
+
     user.mood = selectionId;
-    
+
     localStorage.setItem('USER', JSON.stringify(user));
 
 
@@ -104,7 +100,7 @@ moodForm.addEventListener('submit', (e) => {
     sleepSection.style.display = 'none';
     moodSection.style.display = 'none';
     energySection.style.display = 'flex';
-    
+
 });
 
 
@@ -114,9 +110,7 @@ const energyH1 = document.getElementById('energy-id');
 const energyForm = document.getElementById('energy-form');
 energyH1.textContent = energy.question;
 let item3;
-console.log(energy.choices);
 for (item3 in energy.choices) {
-    console.log(energy.choices.item3);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
@@ -144,9 +138,9 @@ energyForm.addEventListener('submit', (e) => {
     const selectionId = formData.get('choices');
 
     const user = JSON.parse(localStorage.getItem('USER'));
-    
-    user.energyLevels = selectionId;
-    
+
+    user.energy = selectionId;
+
     localStorage.setItem('USER', JSON.stringify(user));
 
 
@@ -155,7 +149,7 @@ energyForm.addEventListener('submit', (e) => {
     moodSection.style.display = 'none';
     energySection.style.display = 'none';
     mbsSection.style.display = 'flex';
-    
+
 });
 
 
@@ -166,9 +160,7 @@ const mbsH1 = document.getElementById('mbs-id');
 const mbsForm = document.getElementById('mbs-form');
 mbsH1.textContent = mbs.question;
 let item4;
-console.log(mbs.choices);
 for (item4 in mbs.choices) {
-    console.log(mbs.choices.item4);
     const radio = document.createElement('input');
     const choices = document.createElement('label');
     radio.type = 'radio';
@@ -197,12 +189,12 @@ mbsForm.addEventListener('submit', (e) => {
     const selectionId = formData.get('choices');
 
     const user = JSON.parse(localStorage.getItem('USER'));
-    
+
     user.mbs = selectionId;
-    
+
     localStorage.setItem('USER', JSON.stringify(user));
 
-    
+
     //leave alone
     sleepSection.style.display = 'none';
     moodSection.style.display = 'none';
@@ -210,9 +202,9 @@ mbsForm.addEventListener('submit', (e) => {
     mbsSection.style.display = 'flex';
 
     window.location = '../results';
- 
-    
+
+
 });
 
 
-    
+
