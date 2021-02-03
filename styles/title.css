@@ -1,100 +1,111 @@
-html, body {
-    height: 100vh;
-    width: 100vw;
-    background-color: rgb(217, 244, 244);
-    /* font-family: 'Chicle', cursive;
-    font-family: 'Coiny', cursive;
-    font-family: 'Lemonada', cursive;
-    font-family: 'Modak', cursive;
-    font-family: 'Montserrat', sans-serif; */
+body, html {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    
+    }
+* {
+        box-sizing: border-box;
 }
 
-main {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    font-family: 'Lemonada', cursive;
-    font-size: 72px;
-    font-weight: bolder;
-    color: rgb(214, 252, 252);
-    text-shadow: rgb(128, 237, 233) 7px 7px;
-    background: center center/cover  rgba(234, 191, 113, 0.748) url(../assets/backgrounds/pexels-karolina-grabowska-4194853.jpg);
-    perspective: 1000px;
-    perspective-origin: 50% 50%;
-    animation: animation 80s linear infinite alternate;
-    border-radius: 40%;
-  }
-  
-  @keyframes animation {
-     100%{
-      background-position:0px -1000px;
-    }
-  }
 
-section {
-    height: 60vh;
-    width: 30vw;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:  #fdfffc;
+    color: pink;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0px;
+    padding: 0 30px;
+    box-shadow: 5px 5px 2px grey;
+}
+
+.navbar a {
+    color: #fec89a;
+    padding: 10px 20px;
+    margin: 0 5px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+
+ul {
+    display: flex;
+    padding: 50px;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.top-container{
+    background-color: #fdfffc;
+    background-image: url("../assets/home.png");                       
+    background-repeat:no-repeat;
+    background-position: bottom right;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    /* background-color: rgba(244, 198, 233, .6); */
-    border-radius: 50%;
+    text-align: left;
+    height: 100%;
+    padding: 200px;
+    background-color: white;
+    
+
+}
+
+p {
+    color: #242423;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 50%;
+    font-size: 1em;
+  }
+
+.logo {
+    color: pink;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 50%;
+}
+
+h1 {
+    color: #e5989b;
+    font-size: 1.2em;
+    width: 50%;
+    font-family: 'Belleza', sans-serif;
+    font-weight:400;
+    font-size: 2em;
+
 }
 
 button {
-    border-radius: 60%;
-    height: 60px;
-    width: 70px;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    border: 5px solid #e3bfdd;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration-line: none;
-    transition-duration: 0.4s;
+
+    background: #fdfffc;
+    color: #fec89a;
+    border: 2px #fec89a solid;
+    font-size:1em;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'Belleza', sans-serif;
+    font-weight: 400;
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
 }
 
-.login, .button-info {
-    border-bottom-left-radius: 60%;
-    border-top-right-radius: 60%;
-    height: 60px;
-    width: 70px;
-    border: 5px solid white;
+button:focus {
+    outline: none;
 }
-
-.button-info:hover {
-    background-color: rgba(128, 237, 233, .4);
-    color: white;
-}
-
-
-/* @keyframes animatedBackground {
-    from {
-    background-position: 0 0;
-    }
-    to {
-    background-position: 100% 0;
-    }
-}
-#animate-area {
-    width: 800px;
-    height: 600px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background: no-repeat center center/cover  rgba(234, 191, 113, 0.748) url(../assets/backgrounds/pexels-karolina-grabowska-4194853.jpg);
-    background-blend-mode: screen;  
-    background-position: 0px 0px;
-    background-repeat: repeat-y;
-    animation: animatedBackground 10s linear infinite alternate;
-} */
-
-
