@@ -59,6 +59,7 @@ export function getOils(moodtier) {
 }
 
 export function getEnergyLevels(energytier) {
+
     const energyArray = energy['choices'][energytier]['result'];
 
     const movement = energy['choices'][energytier]['result'][genRandom(energyArray)];

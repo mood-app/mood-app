@@ -1,20 +1,39 @@
-// IMPORT MODULES under test here:
-// import { example } from '../example.js';
-import { mood } from '../data.js';
-import { getOils } from '../utils.js'
+import { getOils, getEnergyLevels, getSleepCrystal, getMbs } from '../utils.js'
 
 const test = QUnit.test;
 
 test('function getOils should return one randomized oil', (expect) => {
-    //Arrange
-    // Set up your arguments and expectations
     const expected = true;
     
-    //Act 
-    // Call the function you're testing and set the result to a const
-    const actual = ['oils1', 'oils2', 'oils3'].includes(getOils('happy'));
+    const actual = ['5 drops of Sweet Orange, 3 drops of Peppermint, 3 drops of Rosemary', '3 drops of Peppermint, 3 drops of Sweet Orange', '3 drops of Pine Needle, 2 drops of Grapefruit, 2 drops of Frankincense'].includes(getOils('happy'));
 
-    //Expect
-    // Make assertions about what is expected versus the actual result
+
+    expect.equal(actual, expected);
+});
+
+test('function getEnergyLevels should return one randomized energyLevel solution', (expect) => {
+    const expected = true;
+  
+    const actual = ['movement1'].includes(getEnergyLevels('medium'));
+
+
+    expect.equal(actual, expected);
+});
+
+test('function getSleepCrystal should return one randomized crystal', (expect) => {
+    const expected = true;
+    
+    const actual = ['amythest', 'opal', 'tiger'].includes(getSleepCrystal('ninePlus'));
+
+
+    expect.equal(actual, expected);
+});
+
+test('function getMbs should return one randomized meditation based on mbs choice', (expect) => {
+    const expected = true; 
+
+    const actual = ['meditation1'].includes(getMbs('mind'));
+
+
     expect.equal(actual, expected);
 });

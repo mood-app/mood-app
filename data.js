@@ -29,17 +29,17 @@ export const mood = {
         happy: {
             id: 'happy',
             description: 'Happy',
-            result: ['oils1', 'oils2', 'oils3'],
-        },
-        sad: {
+            result: ['5 drops of Sweet Orange, 3 drops of Peppermint, 3 drops of Rosemary', '3 drops of Peppermint, 3 drops of Sweet Orange', '3 drops of Pine Needle, 2 drops of Grapefruit, 2 drops of Frankincense'],
+        }, 
+        sadMood:{
             id: 'sad',
             description: 'Sad',
-            result: ['oils1', 'oils1', 'oils1'],
+            result: ['4 drops of Bergamont, 4 drops of Frankincense', '8 drops of Grapefruit, 5 drops of Lavender', '4 drops of Bergamont, 2 drops of Lavender'],
         },
         stressed: {
             id: 'stressed',
             description: 'Stressed',
-            result: ['oils1', 'oils2', 'oils3'],
+            result: ['5 drops of Lavender, 3 drops of Ylang ylang, 2 drops of Bergamont', '4 drops of Frankincense, 4 drops of Patchouli', '4 drops of Lavender'],
         }
     }
 };
@@ -87,4 +87,3 @@ export const mbs = {
         }
     }
 };
-
