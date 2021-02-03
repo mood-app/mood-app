@@ -30,8 +30,8 @@ export const mood = {
             id: 'happy',
             description: 'Happy',
             result: ['5 drops of Sweet Orange, 3 drops of Peppermint, 3 drops of Rosemary', '3 drops of Peppermint, 3 drops of Sweet Orange', '3 drops of Pine Needle, 2 drops of Grapefruit, 2 drops of Frankincense'],
-        }, 
-        sadMood:{
+        },
+        sad: {
             id: 'sad',
             description: 'Sad',
             result: ['4 drops of Bergamont, 4 drops of Frankincense', '8 drops of Grapefruit, 5 drops of Lavender', '4 drops of Bergamont, 2 drops of Lavender'],

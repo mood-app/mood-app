@@ -1,4 +1,4 @@
-import { getOils, getEnergyLevels, getSleepCrystal, getMbs } from '../utils.js'
+import { getOils, getEnergyLevels, getSleepCrystal, getMbs } from '../utils.js';
 
 const test = QUnit.test;
 
