@@ -1,4 +1,5 @@
 import { sleep, mood, energy, mbs } from '../data.js';
+import { makeItNice } from '../utils.js';
 
 
 const sleepH1 = document.getElementById('sleep-id');
@@ -39,7 +40,7 @@ sleepForm.appendChild(sleepButton);
 
 sleepForm.addEventListener('submit', (e) => {
     e.preventDefault();
-
+   
     const formData = new FormData(sleepForm);
 
     const selectionId = formData.get('choices');

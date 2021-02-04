@@ -76,3 +76,26 @@ export function getMbs(mbstier) {
     return meditate;
 }
 
+export function makeItNice(moodtier) {
+    // FUNCTION DEFINITION: I want to parse a string from the data and create an array so the results are displayed
+    //vertically
+    let string = moodtier;
+    let res = string.split(',');
+    
+    return res;
+}
+
+export function makeitAList(moodtier) {
+    //FUNCTION DEFINITION: This function is going to dynamically populte the result (oil, crystals) as an unordered list
+    let moodArray = makeItNice(moodtier);
+    let moodList = document.createElement('ul');
+
+    for (let i = 0; i < Object.keys(moodArray).length; i++) {
+        let item = document.createElement('li');
+
+        item.appendChild(document.createTextNode(Object.values(moodArray)[i]));
+
+        moodList.appendChild(item);
+    }
+    return moodList;
+}
