@@ -102,6 +102,8 @@ export function makeitAList(moodtier) {
 
 export function displayUserData(){
 
+    const li = document.createElement('li');
+
     const user = JSON.parse(localStorage.getItem('USER'));
 
     const userAvatar = user.zodiac;
@@ -116,5 +118,8 @@ export function displayUserData(){
     
     const userDisplay = document.getElementById('navbar');
 
-    userDisplay.append(avatarImg, userNameDiv);
+    li.append(avatarImg, userNameDiv);
+
+    userDisplay.append(li);
+
 }
