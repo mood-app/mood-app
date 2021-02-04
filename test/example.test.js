@@ -14,7 +14,7 @@ test('function getOils should return one randomized oil', (expect) => {
 test('function getEnergyLevels should return one randomized energyLevel solution', (expect) => {
     const expected = true;
 
-    const actual = ['movement1'].includes(getEnergyLevels('medium'));
+    const actual = ['Chair yoga', 'Yoga for self-intamacy', 'Qi-gong flow'].includes(getEnergyLevels('medium'));
 
 
     expect.equal(actual, expected);
@@ -23,7 +23,7 @@ test('function getEnergyLevels should return one randomized energyLevel solution
 test('function getSleepCrystal should return one randomized crystal', (expect) => {
     const expected = true;
 
-    const actual = ['amythest', 'opal', 'tiger'].includes(getSleepCrystal('ninePlus'));
+    const actual = ['Blue lace agate, Black tourmaline, Kyanite', 'Malachite, Aquamarine, Bloodstone', 'Selenite, Citrine, Black obsidian'].includes(getSleepCrystal('ninePlus'));
 
 
     expect.equal(actual, expected);
