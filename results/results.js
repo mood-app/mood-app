@@ -49,7 +49,7 @@ const energyTier = getEnergyLevels(userData.energy);
 const energyVideo = document.createElement('iframe');
 energyVideo.src = energyTier;
 
-energyDiv.append(energyImage, energyVideo);
+energyDiv.append(energyVideo);
 
 if (userData.energy === 'high') {
     const stallionVideo = document.createElement('iframe');
