@@ -119,8 +119,12 @@ export function displayUserData(){
     
     const userDisplay = document.getElementById('navbar');
 
-    li.append(avatarImg, userNameDiv);
+    li.append(avatarImg);
 
-    userDisplay.append(li);
+    const li2 = document.createElement('li');
+    
+    li2.append(userNameDiv);
+
+    userDisplay.append(li, li2);
 
 }
