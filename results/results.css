@@ -51,24 +51,24 @@ ul {
 .main-section {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    margin: 10px;
+    flex-wrap: wrap;
+    height: 60%;
+    width: 60%;
+    margin: 200px;
   } 
 
 #sleep{
     box-shadow: 10px 10px 5px grey;
-    width: 250px;
+    /* width: 250px; */
   }
   
 #mood{
     box-shadow: 10px 10px 5px grey;
-    width: 250px;
+    /* width: 250px; */
   }
 #mbs{
     box-shadow: 10px 10px 5px grey;
-    width: 250px;
+    /* width: 250px; */
   }
 #energy{
     box-shadow: 10px 10px 5px grey;
@@ -78,8 +78,27 @@ ul {
   
   
 
-  img {
+img {
     width: 100px;
     height: 100px;
-  }
+}
 
+
+.result-box{
+height: 400px;
+width: 400px;
+margin-left: 10px;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+border-color: #FFCDD5;
+border-style: solid;
+border-width: 10px;
+margin: 10px;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

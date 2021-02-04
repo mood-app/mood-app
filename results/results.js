@@ -10,25 +10,30 @@ const energyDiv = document.getElementById('energy');
 
 //SLEEP
 const sleepTier = getSleepCrystal(userData.sleep);
+const sleepLessImage1 = document.createElement('img');
+const sleepLessImage2 = document.createElement('img');
+const sleepLessImage3 = document.createElement('img');
+sleepLessImage1.src = `../assets/crystals/${sleepTier}1.png`;
+sleepLessImage2.src = `../assets/crystals/${sleepTier}2.png`;
+sleepLessImage3.src = `../assets/crystals/${sleepTier}3.png`;
 
-const sleepLessImage = document.createElement('img');
-sleepLessImage.src = `../assets/crystals/${sleepTier}.jpg`;
 const sleepResult = document.createElement('p');
 
 sleepResult.textContent = `${sleepTier}`;
 
-sleepDiv.append(sleepLessImage, sleepResult);
+sleepDiv.append(sleepLessImage1,sleepLessImage2, sleepLessImage3, sleepResult);
 
 // MOOD
 const moodTier = getOils(userData.mood);
 
 const moodImage = document.createElement('img');
-moodImage.src = `../assets/oils/${moodTier}.jpg`;
+moodImage.src = `../assets/oils/oils-image.png`;
 const moodResult = document.createElement('p');
 
 moodResult.textContent = `${moodTier}`;
 
 moodDiv.append(moodImage, moodResult);
+
 
 // MBS
 const mbsTier = getMbs(userData.mbs);
@@ -38,11 +43,9 @@ mbsImage.src = `../assets/mbs/${mbsTier}.jpg`;
 
 mbsDiv.append(mbsImage);
 
+
 // ENERGY
 const energyTier = getEnergyLevels(userData.energy);
-
-const energyImage = document.createElement('img');
-energyImage.src = `../assets/energy/${energyTier}.jpg`;
 const energyVideo = document.createElement('iframe');
 energyVideo.src = energyTier;
 
@@ -53,6 +56,3 @@ if (userData.energy === 'high') {
     stallionVideo.src = 'https://www.youtube.com/embed/7PBYGu4Az8s';
     energyDiv.append(stallionVideo);
 }
-
-
-
