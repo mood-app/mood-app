@@ -100,3 +100,22 @@ export function makeitAList(moodtier) {
     }
     return moodList;
 }
+
+export function displayUserData(){
+
+    const user = JSON.parse(localStorage.getItem('USER'));
+
+    const userAvatar = user.zodiac;
+    const userName = user.name;
+
+    const avatarImg = document.createElement('img');
+    avatarImg.src = `../assets/zodiac/${userAvatar}.png`;
+
+    const userNameDiv = document.createElement('div');
+    userNameDiv.textContent = `${userName}`;
+
+    
+    const userDisplay = document.getElementById('navbar');
+
+    userDisplay.append(avatarImg, userNameDiv);
+}
