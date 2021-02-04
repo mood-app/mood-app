@@ -51,28 +51,57 @@ nav{
     
 .main-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: row;
+    align-items: center;
     flex-wrap: wrap;
     height: 100vh;
+    width: auto;
   } 
 
 #sleep{
     box-shadow: 10px 10px 5px grey;
-    /* width: 250px; */
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
   
 #mood{
     box-shadow: 10px 10px 5px grey;
-    /* width: 250px; */
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+    
+    /* width: 250px; */
+  
 #mbs{
     box-shadow: 10px 10px 5px grey;
-    /* width: 250px; */
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+    /* width: 250px; */
+  
 #energy{
     box-shadow: 10px 10px 5px grey;
-    width: 500px;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
+  
 
   
   
@@ -91,10 +120,10 @@ margin-top: 100px;
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
-border-color: #FFCDD5;
-border-style: solid;
-border-width: 10px;
+border: 2px solid #FFCDD5;
+color: #fec89a;
 }
+
 
 p {
   display: flex;
