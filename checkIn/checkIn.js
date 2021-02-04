@@ -1,5 +1,5 @@
 import { sleep, mood, energy, mbs } from '../data.js';
-import { makeItNice } from '../utils.js';
+
 
 
 const sleepH1 = document.getElementById('sleep-id');

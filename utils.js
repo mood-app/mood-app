@@ -27,7 +27,6 @@ export function getUser() {
     return storage;
 }
 
-
 export function genRandom(array) {
     //FUNCTION DEFINITION: this function generates a randon number based on the length of any given array
     // ARGUMENT: "array" is a variable/parameter that is returning an array
@@ -77,7 +76,8 @@ export function getMbs(mbstier) {
 }
 
 export function makeItNice(moodtier) {
-    // FUNCTION DEFINITION: I want to parse a string from the data and create an array so the results are displayed
+    // FUNCTION DEFINITION: I want to parse a string from the data and 
+    //create an array so the results are displayed
     //vertically
     let string = moodtier;
     let res = string.split(',');
@@ -86,7 +86,8 @@ export function makeItNice(moodtier) {
 }
 
 export function makeitAList(moodtier) {
-    //FUNCTION DEFINITION: This function is going to dynamically populte the result (oil, crystals) as an unordered list
+    //FUNCTION DEFINITION: This function is going to dynamically 
+    //populte the result (oil, crystals) as an unordered list
     let moodArray = makeItNice(moodtier);
     let moodList = document.createElement('ul');
 
