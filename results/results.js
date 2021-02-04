@@ -1,5 +1,5 @@
 //NEED TO GET USER AND DISPLAY WHAT THEYRE CHOICE RESULTS ARE
-import { getUser, getSleepCrystal, getOils, getMbs, getEnergyLevels, makeItNice, makeitAList} from '../utils.js';
+import { getUser, getSleepCrystal, getOils, getMbs, getEnergyLevels, makeItNice, makeitAList } from '../utils.js';
 
 const userData = getUser();
 
