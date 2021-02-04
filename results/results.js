@@ -1,5 +1,5 @@
 //NEED TO GET USER AND DISPLAY WHAT THEYRE CHOICE RESULTS ARE
-import { getUser, getSleepCrystal, getOils, getMbs, getEnergyLevels } from '../utils.js';
+import { getUser, getSleepCrystal, getOils, getMbs, getEnergyLevels, makeItNice, makeitAList} from '../utils.js';
 
 const userData = getUser();
 
@@ -10,6 +10,7 @@ const energyDiv = document.getElementById('energy');
 
 //SLEEP
 const sleepTier = getSleepCrystal(userData.sleep);
+makeItNice(sleepTier);
 const sleepLessImage1 = document.createElement('img');
 const sleepLessImage2 = document.createElement('img');
 const sleepLessImage3 = document.createElement('img');
@@ -21,18 +22,19 @@ const sleepResult = document.createElement('p');
 
 sleepResult.textContent = `${sleepTier}`;
 
-sleepDiv.append(sleepLessImage1,sleepLessImage2, sleepLessImage3, sleepResult);
+sleepDiv.append(sleepLessImage1, sleepLessImage2, sleepLessImage3, makeitAList(sleepTier));
 
 // MOOD
 const moodTier = getOils(userData.mood);
+// makeItNice(moodTier);
 
 const moodImage = document.createElement('img');
 moodImage.src = `../assets/oils/oils-image.png`;
-const moodResult = document.createElement('p');
+// const moodResult = document.createElement('p');
+// moodResult.textContent = `${moodTier}`;
 
-moodResult.textContent = `${moodTier}`;
+moodDiv.append(moodImage, makeitAList(moodTier));
 
-moodDiv.append(moodImage, moodResult);
 
 
 // MBS
@@ -49,7 +51,7 @@ const energyTier = getEnergyLevels(userData.energy);
 const energyVideo = document.createElement('iframe');
 energyVideo.src = energyTier;
 
-energyDiv.append(energyImage, energyVideo);
+energyDiv.append(energyVideo);
 
 if (userData.energy === 'high') {
     const stallionVideo = document.createElement('iframe');
