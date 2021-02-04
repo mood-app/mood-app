@@ -21,7 +21,7 @@ const sleepResult = document.createElement('p');
 
 sleepResult.textContent = `${sleepTier}`;
 
-sleepDiv.append(sleepLessImage1,sleepLessImage2, sleepLessImage3, sleepResult);
+sleepDiv.append(sleepLessImage1, sleepLessImage2, sleepLessImage3, sleepResult);
 
 // MOOD
 const moodTier = getOils(userData.mood);
@@ -49,7 +49,7 @@ const energyTier = getEnergyLevels(userData.energy);
 const energyVideo = document.createElement('iframe');
 energyVideo.src = energyTier;
 
-energyDiv.append(energyImage, energyVideo);
+energyDiv.append(energyVideo);
 
 if (userData.energy === 'high') {
     const stallionVideo = document.createElement('iframe');
