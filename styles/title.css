@@ -8,10 +8,10 @@ body, html {
     }
 * {
         box-sizing: border-box;
- }
+}
 
 
- .navbar {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,7 +23,7 @@ body, html {
     top: 0px;
     padding: 0 30px;
     box-shadow: 5px 5px 2px grey;
-  }
+}
 
 .navbar a {
     color: #fec89a;
@@ -42,7 +42,7 @@ ul {
     text-decoration: none;
     list-style: none;
     
-  }
+}
 
 .top-container{
     background-color: lavender;
@@ -55,8 +55,8 @@ ul {
     text-align: left;
     height: 100%;
     padding: 200px;
-      
-  }
+}
+
 
 p {
     color: #242423;
@@ -76,7 +76,7 @@ p {
     padding-right: 20px;
     padding-top: 20px;
     width: 50%;
-  }
+}
 
 h1 {
     color: #e5989b;
@@ -85,11 +85,11 @@ h1 {
     font-family: 'Belleza', sans-serif;
     font-weight:400;
     font-size: 2em;
-  
-  }
+
+}
 
 button {
-  
+
     background: #fdfffc;
     color: #fec89a;
     border: 2px #fec89a solid;
@@ -102,8 +102,8 @@ button {
     width: 100px;
     height: auto;
     border-radius: 8px;
-  }
+}
 
 button:focus {
     outline: none;
-  }
+}
