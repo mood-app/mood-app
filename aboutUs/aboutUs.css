@@ -6,9 +6,6 @@
     border-radius: 15px;
 }
 
-#top-container {
-    margin-top: 20rem;
-}
 
 #individual-div {
     background-color: #FED3AE;
@@ -31,17 +28,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 110%;
+    width: 100%;
     margin: 0;
     padding: 0;
 }
 
 #profile-pic {
-     height: 250px;
+    height: 250px;
     width: 250px;
     margin-top: 20px; 
     max-height: 50%;
-    max-width: 50%;s
+    max-width: 50%;
     margin-top: 20px;
     border-radius: 15px;
 }
