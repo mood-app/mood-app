@@ -7,7 +7,7 @@ export const sleep = { //accessing keys in objects is faster and more efficienct
         less6: {
             id: 'less6',
             description: 'Less than 6 hours of Sleep',
-            result: ['Amethyst, Flourtie, Lapis', 'Leopardskin, Quartz, Carnelian', 'Lepidolite, Amber, Aventurine']
+            result: ['Amethyst, Flourite, Lapis', 'Leopardskin, Quartz, Carnelian', 'Lepidolite, Amber, Aventurine']
         },
         sixToNine: {
             id: 'sixToNine',
