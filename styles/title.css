@@ -46,7 +46,7 @@ ul {
 
 .top-container{
     background-color: lavender;
-    background-image: url("../assets/home.png");                       
+    background-image: url("../assets/extraAssets/home.png");                       
     background-repeat:no-repeat;
     background-position: bottom right;
     display: flex;
@@ -55,9 +55,7 @@ ul {
     text-align: left;
     height: 100%;
     padding: 200px;
-    
-    
-  
+      
   }
 
 p {

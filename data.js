@@ -7,17 +7,18 @@ export const sleep = { //accessing keys in objects is faster and more efficienct
         less6: {
             id: 'less6',
             description: 'Less than 6 hours of Sleep',
-            result: ['Amethyst, Flourite, Lapis', 'Leopardskin, Quartz, Carnelian', 'Lepidolite, Amber, Aventurine']
+            result: ['Amethyst, Flourite, Lapis', 'Sodalite, LemurianQuartz, Carnelian', 'Lepidolite, Apatite, Aventurine']
+
         },
         sixToNine: {
             id: 'sixToNine',
             description: 'In between 6 and 9 hours of Sleep',
-            result: ['Tiger\'s eye, Turquoise, Kunzite', 'Calcite, Shiva lingam, Angelite', 'Rose quartz, Lolite, Celestite']
+            result: ["Tiger's eye, Turquoise, Unikite", 'Celestite, Sunstone, Angelite', 'Rose quartz, Azurite, Aragonite']
         },
         ninePlus: {
             id: 'ninePlus',
             description: 'More than 9 hours of sleep',
-            result: ['Blue lace agate, Black tourmaline, Kyanite', 'Malachite, Aquamarine, Bloodstone', 'Selenite, Citrine, Black obsidian']
+            result: ['Blue lace agate, Black tourmaline, Red Jasper', 'Apophyllite, Aquamarine, Bloodstone', 'Selenite, Moonstone, Rhodonite']
         }
     }
 };
@@ -61,10 +62,11 @@ export const energy = {
         high: {
             id: 'high',
             description: 'High',
-            result: ['https://www.youtube.com/embed/nVfD906XCLY, https://www.youtube.com/embed/7PBYGu4Az8s', 'https://www.youtube.com/embed/fGxVtubLjB4, https://www.youtube.com/embed/7PBYGu4Az8s', 'https://www.youtube.com/embed/8DZktowZo_k, https://www.youtube.com/embed/7PBYGu4Az8s'],
+            result: ['https://www.youtube.com/embed/nVfD906XCLY', 'https://www.youtube.com/embed/fGxVtubLjB4', 'https://www.youtube.com/embed/8DZktowZo_k'],
         }
     }
 };
+
 export const mbs = {
     id: 'mbs',
     question: 'Where do you want to feel more connection?',
