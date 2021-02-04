@@ -61,7 +61,7 @@ export const energy = {
         high: {
             id: 'high',
             description: 'High',
-            result: ['https://www.youtube.com/embed/nVfD906XCLY, https://www.youtube.com/embed/7PBYGu4Az8s', 'https://www.youtube.com/embed/fGxVtubLjB4, https://www.youtube.com/embed/7PBYGu4Az8s', 'https://www.youtube.com/embed/8DZktowZo_k, https://www.youtube.com/embed/7PBYGu4Az8s'],
+            result: ['https://www.youtube.com/embed/nVfD906XCLY', 'https://www.youtube.com/embed/fGxVtubLjB4', 'https://www.youtube.com/embed/8DZktowZo_k'],
         }
     }
 };
