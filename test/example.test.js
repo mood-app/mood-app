@@ -14,7 +14,7 @@ test('function getOils should return one randomized oil', (expect) => {
 test('function getEnergyLevels should return one randomized energyLevel solution', (expect) => {
     const expected = true;
   
-    const actual = ['Chair yoga', 'Yoga for self-intamacy', 'Qi-gong flow'].includes(getEnergyLevels('medium'));
+    const actual = ['https://www.youtube.com/embed/t7WxjzxAzrU', 'https://www.youtube.com/embed/YyCXWvR4ww0', 'https://www.youtube.com/embed/cwlvTcWR3Gs'].includes(getEnergyLevels('medium'));
 
 
     expect.equal(actual, expected);
