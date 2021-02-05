@@ -1,4 +1,4 @@
-// const USER = 'USER';
+// const SESSIONS = 'SESSION';
 import { setUser } from '../utils.js';
 
 const form = document.querySelector('form');

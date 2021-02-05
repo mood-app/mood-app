@@ -1,5 +1,6 @@
 import { sleep, mood, energy, mbs } from '../data.js';
-import { makeItNice } from '../utils.js';
+import { getUserHistoryStorage } from '../utils.js';
+
 
 
 const sleepH1 = document.getElementById('sleep-id');
@@ -45,11 +46,11 @@ sleepForm.addEventListener('submit', (e) => {
 
     const selectionId = formData.get('choices');
 
-    const user = JSON.parse(localStorage.getItem('USER'));
+    const user = JSON.parse(localStorage.getItem('SESSIONS'));
 
     user.sleep = selectionId;
 
-    localStorage.setItem('USER', JSON.stringify(user));
+    localStorage.setItem('SESSIONS', JSON.stringify(user));
 
 
     //leave alone
@@ -90,11 +91,11 @@ moodForm.addEventListener('submit', (e) => {
 
     const selectionId = formData.get('choices');
 
-    const user = JSON.parse(localStorage.getItem('USER'));
+    const user = JSON.parse(localStorage.getItem('SESSIONS'));
 
     user.mood = selectionId;
 
-    localStorage.setItem('USER', JSON.stringify(user));
+    localStorage.setItem('SESSIONS', JSON.stringify(user));
 
 
     //leave alone
@@ -138,11 +139,11 @@ energyForm.addEventListener('submit', (e) => {
 
     const selectionId = formData.get('choices');
 
-    const user = JSON.parse(localStorage.getItem('USER'));
+    const user = JSON.parse(localStorage.getItem('SESSIONS'));
 
     user.energy = selectionId;
 
-    localStorage.setItem('USER', JSON.stringify(user));
+    localStorage.setItem('SESSIONS', JSON.stringify(user));
 
 
     //leave alone
@@ -189,12 +190,13 @@ mbsForm.addEventListener('submit', (e) => {
 
     const selectionId = formData.get('choices');
 
-    const user = JSON.parse(localStorage.getItem('USER'));
+    const user = JSON.parse(localStorage.getItem('SESSIONS'));
 
     user.mbs = selectionId;
 
-    localStorage.setItem('USER', JSON.stringify(user));
+    localStorage.setItem('SESSIONS', JSON.stringify(user));
 
+    getUserHistoryStorage();
 
     //leave alone
     sleepSection.style.display = 'none';

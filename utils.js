@@ -1,27 +1,38 @@
 import { sleep, mood, mbs, energy } from './data.js';
-
-const USER = 'USER';
+const USERHISTORY = 'USERHISTORY';
+const SESSIONS = 'SESSIONS';
 
 export function setUser(formData) {
     const newUser = {
         name: formData.get('name'),
         zodiac: formData.get('zodiac'),
+        date: formData.get('date'),
         sleep: '',
         mood: '',
         energy: '',
         mbs: '',
-        solutions: {},
     };
     const stringyNewUser = JSON.stringify(newUser);
-    localStorage.setItem('USER', stringyNewUser);
+    localStorage.setItem('SESSIONS', stringyNewUser);
 }
 
+
+export function getUserHistoryStorage(){
+    let storage = JSON.parse(localStorage.getItem(USERHISTORY));
+    if (!storage){
+        storage = []; 
+        localStorage.setItem(USERHISTORY, JSON.stringify(storage));
+    }  
+    return storage;
+}
+
+
 export function getUser() {
-    let storage = JSON.parse(localStorage.getItem(USER));
+    let storage = JSON.parse(localStorage.getItem(SESSIONS));
 
     if (!storage) {
         storage = [];
-        localStorage.setItem(USER, JSON.stringify(storage));
+        localStorage.setItem(SESSIONS, JSON.stringify(storage));
     }
 
     return storage;
@@ -77,7 +88,8 @@ export function getMbs(mbstier) {
 }
 
 export function makeItNice(moodtier) {
-    // FUNCTION DEFINITION: I want to parse a string from the data and create an array so the results are displayed
+    // FUNCTION DEFINITION: I want to parse a string from the data and 
+    //create an array so the results are displayed
     //vertically
     let string = moodtier;
     let res = string.split(',');
@@ -86,7 +98,8 @@ export function makeItNice(moodtier) {
 }
 
 export function makeitAList(moodtier) {
-    //FUNCTION DEFINITION: This function is going to dynamically populte the result (oil, crystals) as an unordered list
+    //FUNCTION DEFINITION: This function is going to dynamically 
+    //populte the result (oil, crystals) as an unordered list
     let moodArray = makeItNice(moodtier);
     let moodList = document.createElement('ul');
 
@@ -104,7 +117,7 @@ export function displayUserData(){
 
     const li = document.createElement('li');
 
-    const user = JSON.parse(localStorage.getItem('USER'));
+    const user = JSON.parse(localStorage.getItem('SESSIONS'));
 
     const userAvatar = user.zodiac;
     const userName = user.name;
@@ -127,3 +140,10 @@ export function displayUserData(){
     userDisplay.append(li, li2);
 
 }
+
+
+// userhistory = {
+//     username1: [{session1}, {session2},]
+//     username2: [],
+//     username3: []
+// }
