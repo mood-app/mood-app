@@ -1,5 +1,6 @@
 import { sleep, mood, energy, mbs } from '../data.js';
-import { getUserHistoryStorage } from '../utils.js';
+import { getUserHistoryStorage, displayUserData } from '../utils.js';
+
 
 
 
@@ -215,4 +216,4 @@ mbsForm.addEventListener('submit', (e) => {
 const user = JSON.parse(localStorage.getItem('SESSIONS'));
 nameSpan.textContent = user.name;
 
-
+displayUserData();
