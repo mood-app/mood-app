@@ -29,16 +29,11 @@ sleepDiv.append(sleepLessImage1, sleepLessImage2, sleepLessImage3, makeitAList(s
 
 // MOOD
 const moodTier = getOils(userData.mood);
-// makeItNice(moodTier);
-
 const moodImage = document.createElement('img');
 moodImage.src = `../assets/oils/oils-image.png`;
-// const moodResult = document.createElement('p');
-// moodResult.textContent = `${moodTier}`;
+
 
 moodDiv.append(moodImage, makeitAList(moodTier));
-
-
 
 // MBS
 const mbsTier = getMbs(userData.mbs);
@@ -48,19 +43,12 @@ mbsVideo.src = `../assets/mbs/${mbsTier}.jpg`;
 
 mbsDiv.append(mbsVideo);
 
-
 // ENERGY
 const energyTier = getEnergyLevels(userData.energy);
 const energyVideo = document.createElement('iframe');
 energyVideo.src = energyTier;
 
 energyDiv.append(energyVideo);
-
-if (userData.energy === 'high') {
-    const stallionVideo = document.createElement('iframe');
-    stallionVideo.src = 'https://www.youtube.com/embed/7PBYGu4Az8s';
-    energyDiv.append(stallionVideo);
-}
 
 const testButton = document.getElementById('test-button');
 
