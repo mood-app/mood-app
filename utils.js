@@ -125,7 +125,7 @@ export function displayUserData(){
     const avatarImg = document.createElement('img');
     avatarImg.src = `../assets/zodiac/${userAvatar}.png`;
 
-    const userNameDiv = document.createElement('div');
+    const userNameDiv = document.createElement('span');
     userNameDiv.textContent = `${userName}`;
 
     

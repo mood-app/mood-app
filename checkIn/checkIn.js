@@ -1,5 +1,6 @@
 import { sleep, mood, energy, mbs } from '../data.js';
-import { getUserHistoryStorage } from '../utils.js';
+import { getUserHistoryStorage, displayUserData } from '../utils.js';
+
 
 
 
@@ -210,4 +211,4 @@ mbsForm.addEventListener('submit', (e) => {
 });
 
 
-
+displayUserData();

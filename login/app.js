@@ -1,5 +1,6 @@
 // const SESSIONS = 'SESSION';
-import { setUser } from '../utils.js';
+import { setUser, displayUserData } from '../utils.js';
+
 
 const form = document.querySelector('form');
 
@@ -13,3 +14,5 @@ form.addEventListener('submit', (e) => {
     window.location = '../checkIn';
     
 });
+
+displayUserData();
