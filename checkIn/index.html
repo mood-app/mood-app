@@ -1,67 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../styles/checkin.css">
   <link rel="stylesheet" href="../styles/home.css">
+  <link rel="stylesheet" href="../styles/checkin.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link
-      href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Megrim&family=Nanum+Myeongjo&family=Poiret+One&display=swap"
-      rel="stylesheet">
-  <title>Check In</title>
+    href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Megrim&family=Nanum+Myeongjo&family=Poiret+One&display=swap"
+    rel="stylesheet">
+  <title>My Daily Check In</title>
 </head>
+
 <body>
   <nav>
     <section class="logo">
       <h4>Afyaa</h4>
     </section>
-      <ul class="links" id="navbar">
-        <li>
-            <a href="../index.html">Home</a>
-        </li>
-        <li>
-            <a href="../aboutUs/aboutUs.html">About Us</a>
-        </li>
-      </ul>
+    <ul class="links" id="navbar">
+      <li>
+        <a href="../index.html">Home</a>
+      </li>
+      <li>
+        <a href="../aboutUs/aboutUs.html">About Us</a>
+      </li>
+    </ul>
   </nav>
   <main>
       <section class ="question-boxes">
-        <h1 class="title">Hey <span id="name"></span>, welcome to your daily check in.</h1>
+      <div id="intro">
+        <h1 class="title">Hi <span id="name"></span>, welcome to your daily check in.</h1>
+        <p>Let's start by having you answer a series of questions.</p>
+        <button id="start-intro">Start</button>
+      </div>
       <div id ="sleep-section">
+
         <h1 id="sleep-id"></h1>
         <form id="sleep-form">
-    
+
         </form>
-    
+
       </div>
-      <div id ="mood-section">
+      <div id="mood-section">
         <h1 id="mood-id"></h1>
         <form id="mood-form">
 
         </form>
-    
+
       </div>
-      <div id ="energy-section">
+      <div id="energy-section">
         <h1 id="energy-id"></h1>
         <form id="energy-form">
 
         </form>
-    
+
       </div>
-      <div id ="mbs-section">
+      <div id="mbs-section">
         <h1 id="mbs-id"></h1>
         <form id="mbs-form">
 
         </form>
-    
+
       </div>
     </section>
   </main>
-  
-  
+
+
   <script type="module" src="./checkIn.js"></script>
 </body>
+
 </html>

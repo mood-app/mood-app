@@ -87,7 +87,6 @@ button {
     font-weight: bold;
     width: 100px;
     height: auto;
-    border-radius: 8px;
 }
 
 button:hover {
@@ -108,4 +107,5 @@ li img {
   margin: 40px;
   height: 300px;
   width: 300px;
+  
 }

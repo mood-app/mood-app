@@ -17,12 +17,12 @@ export function setUser(formData) {
 }
 
 
-export function getUserHistoryStorage(){
+export function getUserHistoryStorage() {
     let storage = JSON.parse(localStorage.getItem(USERHISTORY));
-    if (!storage){
-        storage = []; 
+    if (!storage) {
+        storage = [];
         localStorage.setItem(USERHISTORY, JSON.stringify(storage));
-    }  
+    }
     return storage;
 }
 
@@ -93,7 +93,7 @@ export function makeItNice(moodtier) {
     //vertically
     let string = moodtier;
     let res = string.split(',');
-    
+
     return res;
 }
 
@@ -102,9 +102,11 @@ export function makeitAList(moodtier) {
     //populte the result (oil, crystals) as an unordered list
     let moodArray = makeItNice(moodtier);
     let moodList = document.createElement('ul');
+    moodList.className = 'result-list';
 
     for (let i = 0; i < Object.keys(moodArray).length; i++) {
         let item = document.createElement('li');
+        item.className = 'result-li';
 
         item.appendChild(document.createTextNode(Object.values(moodArray)[i]));
 
@@ -113,7 +115,7 @@ export function makeitAList(moodtier) {
     return moodList;
 }
 
-export function displayUserData(){
+export function displayUserData() {
 
     const li = document.createElement('li');
 
@@ -128,13 +130,13 @@ export function displayUserData(){
     const userNameDiv = document.createElement('span');
     userNameDiv.textContent = `${userName}`;
 
-    
+
     const userDisplay = document.getElementById('navbar');
 
     li.append(avatarImg);
 
     const li2 = document.createElement('li');
-    
+
     li2.append(userNameDiv);
 
     userDisplay.append(li, li2);

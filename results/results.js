@@ -10,6 +10,8 @@ const sleepDiv = document.getElementById('sleep');
 const moodDiv = document.getElementById('mood');
 const mbsDiv = document.getElementById('mbs');
 const energyDiv = document.getElementById('energy');
+const sleepImages = document.getElementById('sleep-images');
+const moodImages = document.getElementById('mood-images');
 
 //SLEEP
 const sleepTier = getSleepCrystal(userData.sleep);
@@ -25,19 +27,26 @@ const sleepResult = document.createElement('p');
 
 sleepResult.textContent = `${sleepTier}`;
 
-sleepDiv.append(sleepLessImage1, sleepLessImage2, sleepLessImage3, makeitAList(sleepTier));
+sleepDiv.append(makeitAList(sleepTier));
+sleepImages.append(sleepLessImage1, sleepLessImage2, sleepLessImage3);
 
 // MOOD
 const moodTier = getOils(userData.mood);
-const moodImage = document.createElement('img');
-moodImage.src = `../assets/oils/oils-image.png`;
+const moodImage1 = document.createElement('img');
+const moodImage2 = document.createElement('img');
+const moodImage3 = document.createElement('img');
+moodImage1.src = `../assets/oils/oils-image.png`;
+moodImage2.src = `../assets/oils/oils-image.png`;
+moodImage3.src = `../assets/oils/oils-image.png`;
 
-
-moodDiv.append(moodImage, makeitAList(moodTier));
+moodDiv.append(makeitAList(moodTier));
+moodImages.append(moodImage1, moodImage2, moodImage3);
 
 // MBS
 const mbsTier = getMbs(userData.mbs);
 const mbsVideo = document.createElement('iframe');
+mbsVideo.style.height = '600px';
+mbsVideo.style.width = '600px';
 mbsVideo.src = mbsTier;
 mbsDiv.append(mbsVideo);
 
@@ -45,6 +54,8 @@ mbsDiv.append(mbsVideo);
 // ENERGY
 const energyTier = getEnergyLevels(userData.energy);
 const energyVideo = document.createElement('iframe');
+energyVideo.style.height = '600px';
+energyVideo.style.width = '600px';
 energyVideo.src = energyTier;
 
 energyDiv.append(energyVideo);
@@ -75,6 +86,11 @@ const katButton = document.getElementById('kat-button');
 oilDiv.style.display = 'none';
 movementDiv.style.display = 'none';
 katDiv.style.display = 'none';
+const divName = document.getElementById('name');
+const resultString = document.getElementById('result-string');
+const user = JSON.parse(localStorage.getItem('SESSIONS'));
+divName.textContent = user.name;
+resultString.textContent = 'crystal combination.';
 
 crystalButton.addEventListener('click', () => {
     
@@ -82,6 +98,8 @@ crystalButton.addEventListener('click', () => {
     oilDiv.style.display = 'none';
     movementDiv.style.display = 'none';
     katDiv.style.display = 'none';
+    
+    resultString.textContent = 'crystal combination.';
 
 });
 
@@ -92,6 +110,8 @@ oilButton.addEventListener('click', () => {
     movementDiv.style.display = 'none';
     katDiv.style.display = 'none';
 
+    resultString.textContent = 'oil blend.';
+
 });
 
 movementButton.addEventListener('click', () => {
@@ -100,6 +120,8 @@ movementButton.addEventListener('click', () => {
     oilDiv.style.display = 'none';
     movementDiv.style.display = 'flex';
     katDiv.style.display = 'none';
+
+    resultString.textContent = 'movement.';
 
 });
 
@@ -110,5 +132,8 @@ katButton.addEventListener('click', () => {
     movementDiv.style.display = 'none';
     katDiv.style.display = 'flex';
 
+    resultString.textContent = 'guided meditation.';
 });
+
+
 
