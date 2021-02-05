@@ -69,6 +69,7 @@ button, input[type="submit"]{
   height: 50px;
   border-bottom-right-radius: 50%;
   border-top-left-radius: 50%;
+  transition: all .2s ease-in-out;
 }
 
 button:hover, input[type="submit"]:hover {
