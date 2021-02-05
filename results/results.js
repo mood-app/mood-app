@@ -37,11 +37,10 @@ moodDiv.append(moodImage, makeitAList(moodTier));
 
 // MBS
 const mbsTier = getMbs(userData.mbs);
-
 const mbsVideo = document.createElement('iframe');
-mbsVideo.src = `../assets/mbs/${mbsTier}.jpg`;
-
+mbsVideo.src = mbsTier;
 mbsDiv.append(mbsVideo);
+
 
 // ENERGY
 const energyTier = getEnergyLevels(userData.energy);
