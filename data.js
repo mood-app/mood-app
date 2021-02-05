@@ -7,18 +7,18 @@ export const sleep = { //accessing keys in objects is faster and more efficienct
         less6: {
             id: 'less6',
             description: 'Less than 6 hours of Sleep',
-            result: ['Amethyst, Flourite, Lapis', 'Sodalite, LemurianQuartz, Carnelian', 'Lepidolite, Apatite, Aventurine']
+            result: ['Amethyst, Flourite, Lapis Lazuli', 'Leopardskin Jasper, Carnelian, Quartz', 'Lepidolite, Amber, Aventurine']
 
         },
         sixToNine: {
             id: 'sixToNine',
             description: 'In between 6 and 9 hours of Sleep',
-            result: ["Tiger's eye, Turquoise, Unikite", 'Celestite, Sunstone, Angelite', 'Rose quartz, Azurite, Aragonite']
+            result: ['Calcite, Shiva Lingam, Angelite', 'Tigers Eye, Turquoise, Kunzite', 'Rose Quartz, Lolite, Celestite']
         },
         ninePlus: {
             id: 'ninePlus',
             description: 'More than 9 hours of sleep',
-            result: ['Blue lace agate, Black tourmaline, Red Jasper', 'Apophyllite, Aquamarine, Bloodstone', 'Selenite, Moonstone, Rhodonite']
+            result: ['Malachite, Aquamarine, Bloodstone', 'Blue Lace Agate, Black Tourmaline, Kyanite', 'Selenite, Citrine, Black Obsidian']
         }
     }
 };
