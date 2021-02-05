@@ -31,18 +31,29 @@
     }
   }
 
+nav {
+  position: fixed;
+  /* padding-bottom: 5%; */
+}
+
+#top-container{
+  padding-top: 10%;
+    font-family: 'Nanum Myeongjo', serif;
+
+}
+
   #crystal-image {
-    max-height: 20%;
-    max-width: 20%;
-    margin-top: 20px;
+    max-height: 16%;
+    max-width: 16%;
+    margin-top: 7px;
     border-radius: 15px;
 }
 
 
 #individual-div {
     background-color: #FED3AE;
-    width: 400px;
-    height: 600px;
+    width: 300px;
+    height: 550px;
     margin: 10px;
     border-radius: 5px;
     display: flex;
@@ -52,7 +63,7 @@
     align-items: center;
     border-color: #FFCDD5;
     border-style: solid;
-    border-width: 10px;
+    border-width: 7px;
 }
 
 #wrapper {
@@ -66,20 +77,23 @@
 }
 
 #profile-pic {
-    height: 250px;
-    width: 250px;
-    margin-top: 20px; 
-    max-height: 50%;
-    max-width: 50%;
-    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    margin-top: 10px; 
+    max-height: 60%;
+    max-width: 60%;
+    margin-top: 7px;
     border-radius: 15px;
 }
 
 p {
-    width: 250px;
+    width: 225px;
+    font-size: 1rem;
 }
 
 h1 {
     margin: 0;
     margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 2rem;
 }

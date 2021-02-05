@@ -7,7 +7,6 @@ nav{
   background-color: transparent;
   min-height: 10vh;
   width: 100%;
-  /* box-shadow: 10px 10px grey; */
   position: fixed;
   
 }
@@ -25,7 +24,7 @@ li img {
   font-family: 'Megrim', cursive;
   color: #eeab92;
   letter-spacing: 2px;
-  font-size: 2.5em;
+  font-size: 3.5em;
   padding-right: 20px;
   padding-top: 20px;
   width: 50%;

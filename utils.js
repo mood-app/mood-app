@@ -17,12 +17,12 @@ export function setUser(formData) {
 }
 
 
-export function getUserHistoryStorage(){
+export function getUserHistoryStorage() {
     let storage = JSON.parse(localStorage.getItem(USERHISTORY));
-    if (!storage){
-        storage = []; 
+    if (!storage) {
+        storage = [];
         localStorage.setItem(USERHISTORY, JSON.stringify(storage));
-    }  
+    }
     return storage;
 }
 
@@ -93,7 +93,7 @@ export function makeItNice(moodtier) {
     //vertically
     let string = moodtier;
     let res = string.split(',');
-    
+
     return res;
 }
 
@@ -115,7 +115,7 @@ export function makeitAList(moodtier) {
     return moodList;
 }
 
-export function displayUserData(){
+export function displayUserData() {
 
     const li = document.createElement('li');
 
@@ -130,13 +130,13 @@ export function displayUserData(){
     const userNameDiv = document.createElement('span');
     userNameDiv.textContent = `${userName}`;
 
-    
+
     const userDisplay = document.getElementById('navbar');
 
     li.append(avatarImg);
 
     const li2 = document.createElement('li');
-    
+
     li2.append(userNameDiv);
 
     userDisplay.append(li, li2);
