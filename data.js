@@ -75,7 +75,7 @@ export const mbs = {
         body: {
             id: 'body',
             description: 'Body',
-            result: ['meditation2'],
+            result: ['https://player.vimeo.com/video/508703124'],
         },
         spirit: {
             id: 'spirit',
