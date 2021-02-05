@@ -10,11 +10,13 @@ const sleepSection = document.getElementById('sleep-section');
 const moodSection = document.getElementById('mood-section');
 const energySection = document.getElementById('energy-section');
 const mbsSection = document.getElementById('mbs-section');
+const introSection = document.getElementById('intro');
+const introButton = document.getElementById('start-intro');
 const nameSpan = document.getElementById('name');
 
 
 
-sleepSection.style.display = 'flex';
+sleepSection.style.display = 'none';
 moodSection.style.display = 'none';
 energySection.style.display = 'none';
 mbsSection.style.display = 'none';
@@ -35,6 +37,14 @@ for (item1 in sleep.choices) {
     choices.append(radio);
     sleepForm.append(choices);
 }
+
+// intro event listners //
+
+introButton.addEventListener('click', () => {
+    introSection.style.display = 'none';
+    sleepSection.style.display = 'flex';
+});
+
 
 // sleep event listners //
 

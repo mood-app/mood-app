@@ -102,9 +102,11 @@ export function makeitAList(moodtier) {
     //populte the result (oil, crystals) as an unordered list
     let moodArray = makeItNice(moodtier);
     let moodList = document.createElement('ul');
+    moodList.className = 'result-list';
 
     for (let i = 0; i < Object.keys(moodArray).length; i++) {
         let item = document.createElement('li');
+        item.className = 'result-li';
 
         item.appendChild(document.createTextNode(Object.values(moodArray)[i]));
 
