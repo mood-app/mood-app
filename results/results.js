@@ -45,6 +45,8 @@ moodImages.append(moodImage1, moodImage2, moodImage3);
 // MBS
 const mbsTier = getMbs(userData.mbs);
 const mbsVideo = document.createElement('iframe');
+mbsVideo.style.height = '600px';
+mbsVideo.style.width = '600px';
 mbsVideo.src = mbsTier;
 mbsDiv.append(mbsVideo);
 
@@ -52,6 +54,8 @@ mbsDiv.append(mbsVideo);
 // ENERGY
 const energyTier = getEnergyLevels(userData.energy);
 const energyVideo = document.createElement('iframe');
+energyVideo.style.height = '600px';
+energyVideo.style.width = '600px';
 energyVideo.src = energyTier;
 
 energyDiv.append(energyVideo);
