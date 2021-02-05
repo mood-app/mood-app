@@ -2,7 +2,6 @@
 export const sleep = { //accessing keys in objects is faster and more efficienct than iterating through an array
     id: 'sleep',
     question: 'How many hours did you sleep?',
-    // image: 'vinyasa-quest.png',
     choices: {
         less6: {
             id: 'less6',
@@ -25,7 +24,6 @@ export const sleep = { //accessing keys in objects is faster and more efficienct
 export const mood = {
     id: 'mood',
     question: 'How are you feeling today?',
-    // image: 'vinyasa-quest.png',
     choices: {
         happy: {
             id: 'happy',
@@ -47,7 +45,6 @@ export const mood = {
 export const energy = {
     id: 'energy',
     question: 'How would you describe your energy levels today?',
-    // image: 'vinyasa-quest.png',
     choices: {
         low: {
             id: 'low',
@@ -62,15 +59,13 @@ export const energy = {
         high: {
             id: 'high',
             description: 'High',
-            result: ['https://www.youtube.com/embed/nVfD906XCLY', 'https://www.youtube.com/embed/fGxVtubLjB4', 'https://www.youtube.com/embed/8DZktowZo_k'],
+            result: ['https://www.youtube.com/embed/nVfD906XCLY', 'https://www.youtube.com/embed/fGxVtubLjB4', 'https://www.youtube.com/embed/7PBYGu4Az8s'],
         }
     }
 };
-
 export const mbs = {
     id: 'mbs',
     question: 'Where do you want to feel more connection?',
-    // image: 'vinyasa-quest.png',
     choices: {
         mind: {
             id: 'mind',

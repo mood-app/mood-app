@@ -24,7 +24,7 @@ test('function getEnergyLevels should return one randomized energyLevel solution
 test('function getSleepCrystal should return one randomized crystal', (expect) => {
     const expected = true;
 
-    const actual = ['Blue lace agate, Black tourmaline, Red Jasper', 'Apophyllite, Aquamarine, Bloodstone', 'Selenite, Moonstone, Rhodonite'].includes(getSleepCrystal('ninePlus'));
+    const actual = ['Malachite, Aquamarine, Bloodstone', 'Blue Lace Agate, Black Tourmaline, Kyanite', 'Selenite, Citrine, Black Obsidian'].includes(getSleepCrystal('ninePlus'));
 
 
     expect.equal(actual, expected);
@@ -34,7 +34,7 @@ test('function getSleepCrystal should return one randomized crystal', (expect) =
 test('function getMbs should return one randomized meditation based on mbs choice', (expect) => {
     const expected = true;
 
-    const actual = ['meditation1'].includes(getMbs('mind'));
+    const actual = ['mind.mp3'].includes(getMbs('mind'));
 
 
     expect.equal(actual, expected);
