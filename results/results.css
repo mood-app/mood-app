@@ -31,7 +31,8 @@ body {
     background-position: 0% 50%;
   }
 }
-    
+
+
 .main-section {
     display: flex;
     flex-direction: column;
@@ -85,15 +86,10 @@ body {
     text-align: center;
   }
   
-
-  
-  
-
 img {
     width: 100px;
     height: 100px;
 }
-
 
 .result-box{
 height: 300px;
@@ -106,7 +102,6 @@ flex-wrap: wrap;
 border: 2px solid #FFCDD5;
 color: #fec89a;
 }
-
 
 p {
   display: flex;
