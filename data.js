@@ -70,17 +70,17 @@ export const mbs = {
         mind: {
             id: 'mind',
             description: 'Mind',
-            result: ['mind.mp3'],
+            result: ['https://player.vimeo.com/video/508702191'],
         },
         body: {
             id: 'body',
             description: 'Body',
-            result: ['meditation2'],
+            result: ['https://player.vimeo.com/video/508702191'],
         },
         spirit: {
             id: 'spirit',
             description: 'Spirit',
-            result: ['meditation3'],
+            result: ['https://player.vimeo.com/video/508703124'],
         }
     }
 };
