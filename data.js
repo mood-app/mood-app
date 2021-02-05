@@ -75,7 +75,7 @@ export const mbs = {
         mind: {
             id: 'mind',
             description: 'Mind',
-            result: ['meditation1'],
+            result: ['mind.mp3'],
         },
         body: {
             id: 'body',
