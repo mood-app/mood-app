@@ -1,0 +1,111 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+        
+  /* font-family: 'Julius Sans One', sans-serif; */
+  /* font-family: 'Megrim', cursive; */
+  /* font-family: 'Nanum Myeongjo', serif; */
+  /* font-family: 'Poiret One', cursive; */
+  
+  --color1: #211f1f;
+  --color2: #eeab92;
+  --color3: rgb(116, 73, 160);
+  }
+  
+  body {
+    background: linear-gradient(-45deg, #eb9176, #e9719f, #72bdd8, #6dd8bf);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .top-container{
+      /* background-color: lavender; */
+      background-image: url("../assets/extraAssets/home.png");                       
+      background-repeat:no-repeat;
+      background-position: bottom right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: left;
+      padding: 250px;
+      height: 100vh;
+    }
+
+h1 {
+    color: var(--color3);
+    font-size: 1.2em;
+    width: 100%;
+    font-family: 'Poiret One', cursive;
+    font-weight:400;
+    font-size: 4.5em;
+}
+
+p {
+    color: #242423;
+    font-family: 'Nanum Myeongjo', serif;
+    /* font-weight: bold; */
+    padding-right: 20px;
+    padding-top: 20px;
+    width: 50%;
+    font-size: 2em;
+  }
+
+
+h1 {
+  color: rgb(85, 39, 131);
+    font-size: 1.2em;
+    width: 70%;
+    font-family: 'Poiret One', cursive;
+    font-weight:400;
+    font-size: 4.5em;
+
+}
+
+button {
+
+    background: transparent;
+    color: var(--color2);
+    border: 2px var(--color2) solid;
+    font-size:1.2em;
+    padding: 10px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+button:hover {
+  background: var(--color3);
+}
+
+button:focus {
+    outline: none;
+}
+
+li img {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+
+#chart{
+  margin: 40px;
+  height: 300px;
+  width: 300px;
+}

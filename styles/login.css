@@ -1,0 +1,124 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+      
+      /* font-family: 'Julius Sans One', sans-serif; */
+    /* font-family: 'Megrim', cursive; */
+    /* font-family: 'Nanum Myeongjo', serif; */
+    /* font-family: 'Poiret One', cursive; */
+
+    --color1: #211f1f;
+    --color2: #eeab92;
+    --color3: rgb(116, 73, 160);
+}
+
+body {
+  background: linear-gradient(-45deg, #e9b8a9, #f2eebc,  #aad1df, #d2bbe9, #b7dfc0);
+  background-blend-mode: soft-light;
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: lavender; */
+  height: 100vh;
+}
+
+.main-section {
+  background-color: var(--color5);
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  box-shadow: 10px 10px 5px grey;
+  height: 500px;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100%;
+  
+
+}
+
+label{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+input { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="text"]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 2px 	var(--color2) solid;
+    text-decoration: none;
+    font-family: 'Poiret One', cursive;
+    font-size: 2em;
+    color: var(--color3);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.hide {
+  font-family: 'Poiret One', cursive;
+  display: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  margin: 10px;
+  padding: 10px;
+}
+
+input:checked + .hide, input:checked + img {
+  border-bottom: solid 1.5px var(--color1);  
+}
+
+.myDIV:hover + .hide {
+  display: flex;
+  color: var(--color1);
+} 
+
+input:focus {
+  outline:none;
+}
+
