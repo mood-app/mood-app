@@ -9,12 +9,15 @@ const sleepSection = document.getElementById('sleep-section');
 const moodSection = document.getElementById('mood-section');
 const energySection = document.getElementById('energy-section');
 const mbsSection = document.getElementById('mbs-section');
+const nameSpan = document.getElementById('name');
+
 
 
 sleepSection.style.display = 'flex';
 moodSection.style.display = 'none';
 energySection.style.display = 'none';
 mbsSection.style.display = 'none';
+
 
 // SLEEP 
 sleepH1.textContent = sleep.question;
@@ -209,5 +212,7 @@ mbsForm.addEventListener('submit', (e) => {
 
 });
 
+const user = JSON.parse(localStorage.getItem('SESSIONS'));
+nameSpan.textContent = user.name;
 
 

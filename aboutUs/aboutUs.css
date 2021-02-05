@@ -1,5 +1,37 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+        
+  /* font-family: 'Julius Sans One', sans-serif; */
+  /* font-family: 'Megrim', cursive; */
+  /* font-family: 'Nanum Myeongjo', serif; */
+  /* font-family: 'Poiret One', cursive; */
+  
+  --color1: #211f1f;
+  --color2: #eeab92;
+  --color3: rgb(116, 73, 160);
+  }
+  
+  body {
+    background: linear-gradient(-45deg, #eb9176, #e9719f, #72bdd8, #6dd8bf);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
-#crystal-image {
+  #crystal-image {
     max-height: 20%;
     max-width: 20%;
     margin-top: 20px;
