@@ -34,7 +34,7 @@ test('function getSleepCrystal should return one randomized crystal', (expect) =
 test('function getMbs should return one randomized meditation based on mbs choice', (expect) => {
     const expected = true;
 
-    const actual = ['mind.mp3'].includes(getMbs('mind'));
+    const actual = ['https://player.vimeo.com/video/508702191'].includes(getMbs('mind'));
 
 
     expect.equal(actual, expected);
