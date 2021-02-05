@@ -15,6 +15,8 @@ export function setUser(formData) {
     const stringyNewUser = JSON.stringify(newUser);
     localStorage.setItem('SESSIONS', stringyNewUser);
 }
+
+
 export function getUserHistoryStorage(){
     let storage = JSON.parse(localStorage.getItem(USERHISTORY));
     if (!storage){
@@ -23,6 +25,7 @@ export function getUserHistoryStorage(){
     }  
     return storage;
 }
+
 
 export function getUser() {
     let storage = JSON.parse(localStorage.getItem(SESSIONS));

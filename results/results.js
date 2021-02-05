@@ -1,5 +1,8 @@
 //NEED TO GET USER AND DISPLAY WHAT THEYRE CHOICE RESULTS ARE
-import { getUser, getSleepCrystal, getOils, getMbs, getEnergyLevels, makeItNice, makeitAList } from '../utils.js';
+import { getUser, getSleepCrystal, getOils, getMbs, getEnergyLevels, makeItNice, makeitAList, getUserHistoryStorage } from '../utils.js';
+
+import { seeUserData, countSleep } from '../userHistory/historyUtils.js';
+
 
 const userData = getUser();
 
@@ -58,3 +61,15 @@ if (userData.energy === 'high') {
     stallionVideo.src = 'https://www.youtube.com/embed/7PBYGu4Az8s';
     energyDiv.append(stallionVideo);
 }
+
+const testButton = document.getElementById('test-button');
+
+const userDataStorage = getUser();
+const getHistoryData = getUserHistoryStorage();
+
+//TEST BUTTON
+testButton.addEventListener('click', () => {
+    console.log(seeUserData(userDataStorage));
+    console.log(countSleep(getHistoryData), 'HI');
+
+});

@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles/title.css">
     <link rel="stylesheet" href="../styles/login.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <title>Mood App Name</title>
 </head>
 
@@ -30,14 +31,21 @@
           </ul>
     </nav>
     <div id="top-container" class="top-container">
-        <h1> USER HISTORY </h1>
-        <p> TESTING SESSION STORAGE</p>
-        <button id="test-button">Test Button</button>
+
         <br>
-        <!-- <a href="./login/index.html"><button class="btn btn-info">Log In</button></a> -->
+
+        <div id='chart'>
+            <canvas id="myChartSleep" width="500" height="500"></canvas>
+        </div>
+        <div id='chart'>
+            <canvas id="myChartMood" width="500" height="500"></canvas>
+        </div>
+
     </div>
 
+
     <script type="module" src="userHistory.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </body>
 
 </html>

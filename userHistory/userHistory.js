@@ -1,61 +1,92 @@
-import { getUser, getUserHistoryStorage } from '../utils.js';
+import { getUserHistoryStorage } from '../utils.js';
+import { countSleep, countMood } from './historyUtils.js';
 
-const testButton = document.getElementById('test-button');
-const historyStorage = getUserHistoryStorage(); 
-const userDataStorage = getUser();
 
-function seeHistoryData(historyStorage) { 
-    //FUNCTION DEFINITION: This function is going to
-    //push our session local storage to our history local storage
-    const displayArray = [];
-    console.log("in here");
-    for (let item in historyStorage) {
-        
-        displayArray.push(item);
+const getHistoryData = getUserHistoryStorage();
+
+
+
+//SLEEP CHART ONLY 
+
+const sleepLabels = ['less6', 'sixToNine', 'ninePlus'];
+var ctx = document.getElementById('myChartSleep').getContext('2d');
+var myChart = new Chart(ctx, {  //  eslint-disable-line
+    type: 'bar',
+    data: {
+        labels: sleepLabels,
+        datasets: [
+            {
+                label: '# of times sleep pattern',
+                data: countSleep(getHistoryData),
+                backgroundColor: 'pink',
+                borderColor: 'red',
+                borderWidth: 2
+            }
+        ]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 1
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 1
+                }
+            }],
+        }
     }
-    return displayArray;
-}
-
-function seeUserData(userDataStorage) { 
-    //FUNCTION DEFINITION: This function is going to
-    //push our session local storage to our history local storage
-    const displayArray = [];
-    let obj = {};
-
-    console.log(obj);
-    displayArray.push(userDataStorage);
-    // for (let item in userDataStorage) {
-    //     console.log(item);
-    //     displayArray.push(item);
-    // }
-    return displayArray;
-}
-console.log(getUser());
-
-
-testButton.addEventListener('click', () => {
-    console.log(seeHistoryData(historyStorage));
-    console.log(seeUserData(userDataStorage));
-
 });
 
 
-// function seeUserData(userDataStorage) { 
-//     //FUNCTION DEFINITION: This function is going to
-//     //push our session local storage to our history local storage
-//     const displayArray = [];
-//     let obj = {
-//         'username1' : [{ 'session': '1' }]
-//     };
-//     let username2 = [{ 'session': '2' }];
 
-//     obj['username2'] = username2;
-//     console.log(obj);
-//     displayArray.push(userDataStorage);
-//     // for (let item in userDataStorage) {
-//     //     console.log(item);
-//     //     displayArray.push(item);
-//     // }
-//     return displayArray;
-// }
-// console.log(getUser());
+//MOOD CHART ONLY 
+const moodLabels = ['happy', 'sad', 'stressed'];
+var ctx1 = document.getElementById('myChartMood').getContext('2d');
+var myChart = new Chart(ctx1, {  //  eslint-disable-line
+    type: 'bar',
+    data: {
+        labels: moodLabels,
+        datasets: [
+            {
+                label: '# of times sleep pattern',
+                data: countMood(getHistoryData),
+                backgroundColor: 'pink',
+                borderColor: 'red',
+                borderWidth: 2
+            }
+        ]
+    },
+    options: {
+        scales: {
+            xAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 1
+                }
+            }],
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stepSize: 1
+                }
+            }],
+        }
+    }
+});
+
+
+//ENERGY CHART ONLY 
+
+//MBS CHART ONLY 
+
+
+
+
+
+
+
