@@ -61,3 +61,54 @@ testButton.addEventListener('click', () => {
 
 });
 
+// results display //
+
+const crystalDiv = document.getElementById('sleep');
+const oilDiv = document.getElementById('mood');
+const movementDiv = document.getElementById('energy');
+const katDiv = document.getElementById('mbs');
+const crystalButton = document.getElementById('crystal-button');
+const oilButton = document.getElementById('oil-button');
+const movementButton = document.getElementById('movement-button');
+const katButton = document.getElementById('kat-button');
+
+oilDiv.style.display = 'none';
+movementDiv.style.display = 'none';
+katDiv.style.display = 'none';
+
+crystalButton.addEventListener('click', () => {
+    
+    crystalDiv.style.display = 'flex';
+    oilDiv.style.display = 'none';
+    movementDiv.style.display = 'none';
+    katDiv.style.display = 'none';
+
+});
+
+oilButton.addEventListener('click', () => {
+    
+    crystalDiv.style.display = 'none';
+    oilDiv.style.display = 'flex';
+    movementDiv.style.display = 'none';
+    katDiv.style.display = 'none';
+
+});
+
+movementButton.addEventListener('click', () => {
+    
+    crystalDiv.style.display = 'none';
+    oilDiv.style.display = 'none';
+    movementDiv.style.display = 'flex';
+    katDiv.style.display = 'none';
+
+});
+
+katButton.addEventListener('click', () => {
+    
+    crystalDiv.style.display = 'none';
+    oilDiv.style.display = 'none';
+    movementDiv.style.display = 'none';
+    katDiv.style.display = 'flex';
+
+});
+
