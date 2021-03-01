@@ -93,7 +93,7 @@ divName.textContent = user.name;
 resultString.textContent = 'crystal combination.';
 
 crystalButton.addEventListener('click', () => {
-    
+    // this repition in the even handlers could be refactored to take in the div you want to assign to 'flex', and assign all the rest to 'none'
     crystalDiv.style.display = 'flex';
     oilDiv.style.display = 'none';
     movementDiv.style.display = 'none';
