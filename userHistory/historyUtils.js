@@ -15,12 +15,7 @@ export function seeUserData(userDataStorage) {
 }
 
 export function getSleepData(getHistoryData){
-    const seenArray = [];
-
-    for (let item of getHistoryData) {
-        seenArray.push(item.sleep);
-    }
-    return seenArray;
+    return getHistoryData.map(item => item.sleep);
 
 }
 
@@ -43,20 +38,12 @@ export function countSleep(getHistoryData){
     }
     emptyArray.push(less6, sixToNine, ninePlus);
 
-    console.log(emptyArray, 'HI');
-
     return emptyArray;
 
 }
 
 export function getDateData(getHistoryData){
-    const seenArray = [];
-
-    for (let item of getHistoryData) {
-        seenArray.push(item.date);
-    }
-    return seenArray;
-
+    return getHistoryData.map(item => item.date);
 }
 
 
@@ -78,9 +65,8 @@ export function countMood(getHistoryData){
             stressed++;
         }
     }
+    // if this had been an object, you could use a .map to refactor this function. as it stands, this is a good solution
     emptyArray.push(happy, sad, stressed);
-
-    console.log(emptyArray, 'HI');
 
     return emptyArray;
 

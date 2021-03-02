@@ -55,12 +55,8 @@ sleepForm.appendChild(sleepButton);
 
 sleepForm.addEventListener('submit', (e) => {
     e.preventDefault();
-   
-    const formData = new FormData(sleepForm);
-
-    const selectionId = formData.get('choices');
-
-    const user = JSON.parse(localStorage.getItem('SESSIONS'));
+   // there is some repition here, where you're doing the same thing in every form. would have been interesting to try and make this dynamic by creating a function that takes in the appropriate form and gets the right stuff out as a return value. The only problem is returning multiple things from the function, which means you'd have to return an object and destructure it on the function call, like so:
+    const { user, selectionId } = doFormStuff(sleepForm);
 
     user.sleep = selectionId;
 
@@ -101,11 +97,7 @@ moodForm.appendChild(moodButton);
 moodForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const formData = new FormData(moodForm);
-
-    const selectionId = formData.get('choices');
-
-    const user = JSON.parse(localStorage.getItem('SESSIONS'));
+    const { user, selectionId } = doFormStuff(moodForm);
 
     user.mood = selectionId;
 
@@ -149,11 +141,7 @@ energyForm.appendChild(energyButton);
 energyForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const formData = new FormData(energyForm);
-
-    const selectionId = formData.get('choices');
-
-    const user = JSON.parse(localStorage.getItem('SESSIONS'));
+    const { user, selectionId } = doFormStuff(energyForm);
 
     user.energy = selectionId;
 
@@ -200,11 +188,7 @@ mbsForm.appendChild(mbsButton);
 mbsForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const formData = new FormData(mbsForm);
-
-    const selectionId = formData.get('choices');
-
-    const user = JSON.parse(localStorage.getItem('SESSIONS'));
+    const { user, selectionId } = doFormStuff(mbsForm);
 
     user.mbs = selectionId;
 
@@ -227,3 +211,13 @@ const user = JSON.parse(localStorage.getItem('SESSIONS'));
 nameSpan.textContent = user.name;
 
 displayUserData();
+function doFormStuff(form) {
+    const formData = new FormData(form);
+
+    const selectionId = formData.get('choices');
+
+    const user = JSON.parse(localStorage.getItem('SESSIONS'));
+
+    return { user, selectionId };
+}
+
